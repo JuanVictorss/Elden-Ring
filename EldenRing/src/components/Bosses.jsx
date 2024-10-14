@@ -1,5 +1,7 @@
 import hookBosses from "../hooks/BossesHook";
 import { Card } from "../styles/BossCard";
+import offline from "../assets/offline.jpg";
+import noImage from "../assets/noImage.jpg";
 
 const Bosses = () => {
   const boss = hookBosses();
@@ -13,12 +15,15 @@ const Bosses = () => {
               <h2>{item.name}</h2>
               <img
                 src={
-                  item.image
+                  navigator.onLine
                     ? item.image
-                    : "https://png.pngtree.com/png-vector/20191004/ourmid/pngtree-alert-icon-isolated-on-abstract-background-png-image_1779868.jpg"
+                      ? item.image
+                      : noImage
+                    : offline
                 }
                 alt=""
               />
+
               <p>
                 <strong>Descrição: </strong> <br />
                 {item.description}

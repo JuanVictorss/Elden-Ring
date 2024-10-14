@@ -18,14 +18,16 @@ export const Card = styled.div`
 
     width: 40rem;
     padding: 2rem;
-    margin: 2rem 0rem;
+    margin: 2rem;
     border-radius: 20px;
 
     box-shadow: 10px 10px 50px #4a4a4a;
     background-color: #2a2a2a;
   }
   img {
+    margin: 1rem;
     width: 25vw;
     height: 25vw;
+    border-radius: 1rem;
   }
 `;

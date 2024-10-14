@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Pagina = styled.body`
-  background-color: black;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  flex-direction: row;
+  background-color: black;
 `;
