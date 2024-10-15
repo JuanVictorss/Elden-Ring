@@ -4,6 +4,9 @@ import { Painel } from "../styles/Painel";
 const NavBar = () => {
   return (
     <Painel>
+      <div className="menu">
+        <a href="#">Menu</a>
+      </div>
       <ul>
         <li>Munições</li>
         <li>Armaduras</li>

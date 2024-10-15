@@ -5,12 +5,26 @@ export const Painel = styled.div`
   flex-direction: column;
   left: 0;
   width: 10rem;
-  height: 100%;
+  height: auto;
   color: white;
 
   li {
-    padding: 5%;
-    margin: 2%;
+    padding: 14%;
+    margin: 1% 0;
     background-color: #2a2a2a;
+    list-style-type: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media only screen and (max-height: 600px) {
+    li {
+      padding: 5%;
+      margin: 1% 0;
+      background-color: #2a2a2a;
+      list-style-type: none;
+    }
   }
 `;
