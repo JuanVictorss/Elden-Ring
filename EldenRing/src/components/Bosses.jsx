@@ -1,5 +1,5 @@
 import hookBosses from "../hooks/BossesHook";
-import { Card } from "../styles/BossCard";
+import { BossCard } from "../styles/Cards/BossCard";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 
@@ -7,7 +7,7 @@ const Bosses = () => {
   const boss = hookBosses();
 
   return (
-    <Card>
+    <BossCard>
       {boss ? (
         <ul>
           {boss.map((item) => (
@@ -43,7 +43,7 @@ const Bosses = () => {
       ) : (
         <p>Loading...</p>
       )}
-    </Card>
+    </BossCard>
   );
 };
 

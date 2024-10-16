@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const MunicaoCard = styled.div`
   color: white;
+
+  .poder-de-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+  }
   ul {
     display: flex;
     align-items: center;

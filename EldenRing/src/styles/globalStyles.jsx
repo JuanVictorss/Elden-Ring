@@ -8,5 +8,9 @@ export const GlobalStyles = createGlobalStyle`
   padding: 0;
 }
 
-
+body{  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  background-color: black;}
 `;

@@ -6,10 +6,13 @@ export const Painel = styled.div`
   left: 0;
   width: 10rem;
   height: auto;
-  color: white;
 
+  .linkCor {
+    text-decoration: none;
+    color: wheat;
+  }
   li {
-    padding: 14%;
+    padding: 13%;
     margin: 1% 0;
     background-color: #2a2a2a;
     list-style-type: none;

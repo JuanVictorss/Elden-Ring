@@ -6,7 +6,7 @@ const hookBosses = () => {
 
   useEffect(() => {
     const pegarDados = async () => {
-      const dados = await bosses();
+      const dados = await bosses;
       setBoss(dados.data);
     };
     pegarDados();
