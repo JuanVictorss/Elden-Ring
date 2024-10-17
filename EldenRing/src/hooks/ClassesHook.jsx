@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import classes from "../services/ClassesApi";
+import { classes } from "../services/ApiLinks";
 
 const hookClasses = () => {
   const [classe, setClasse] = useState([]);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import armaduras from "../services/ArmadurasApi";
+import { armaduras } from "../services/ApiLinks";
 
 const hookArmaduras = () => {
   const [armadura, setArmadura] = useState([]);

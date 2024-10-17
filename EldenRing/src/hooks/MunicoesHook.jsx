@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import municoes from "../services/MunicoesApi";
+import { municoes } from "../services/ApiLinks";
 
 const hookMunicoes = () => {
   const [municao, setMunicao] = useState([]);

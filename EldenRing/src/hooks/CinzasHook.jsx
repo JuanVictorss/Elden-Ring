@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import cinzas from "../services/CinzasApi";
+import { cinzas } from "../services/ApiLinks";
 
 const hookCinzas = () => {
   const [cinza, setCinza] = useState([]);

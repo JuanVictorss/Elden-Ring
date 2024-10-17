@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import criaturas from "../services/CriaturasApi";
+import { criaturas } from "../services/ApiLinks";
 
 const hookCriaturas = () => {
   const [criatura, setCriatura] = useState([]);

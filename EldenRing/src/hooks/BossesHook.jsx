@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import bosses from "../services/BossesApi";
+import { bosses } from "../services/ApiLinks";
 
 const hookBosses = () => {
   const [boss, setBoss] = useState([]);
