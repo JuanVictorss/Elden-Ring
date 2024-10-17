@@ -1,11 +1,11 @@
-import hookBosses from "../hooks/BossesHook";
 import { BossCard } from "../styles/Cards/BossCard";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
+import hookGeral from "../hooks/HookGeral";
 
 const Bosses = () => {
-  const boss = hookBosses();
+  const boss = hookGeral("boss");
 
   return (
     <>

@@ -1,11 +1,11 @@
 import { MunicaoCard } from "../styles/Cards/MunicaoCard";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
-import hookArmaduras from "../hooks/ArmadurasHook";
+import hookGeral from "../hooks/HookGeral";
 import BarraLateral from "../components/Painel";
 
-const Bosses = () => {
-  const armadura = hookArmaduras();
+const Armaduras = () => {
+  const armadura = hookGeral("armadura");
 
   return (
     <>
@@ -38,8 +38,8 @@ const Bosses = () => {
                 </p>
                 <div className="dano-negacao">
                   a div
-                  {item.dmgNegation.map((damage) => (
-                    <p>
+                  {item.dmgNegation.map((damage, indice) => (
+                    <p key={indice}>
                       {damage.name} : {damage.amount}
                     </p>
                   ))}
@@ -59,4 +59,4 @@ const Bosses = () => {
   );
 };
 
-export default Bosses;
+export default Armaduras;

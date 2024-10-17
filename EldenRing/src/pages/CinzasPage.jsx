@@ -1,11 +1,11 @@
-import hookCinzas from "../hooks/CinzasHook";
 import { CardGeral } from "../styles/Cards//CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
+import hookGeral from "../hooks/HookGeral";
 
 const CinzasPage = () => {
-  const cinza = hookCinzas();
+  const cinza = hookGeral("cinza");
   return (
     <>
       <BarraLateral />

@@ -1,10 +1,10 @@
-import hookMunicoes from "../hooks/MunicoesHook";
 import { MunicaoCard } from "../styles/Cards/MunicaoCard";
 import offline from "../assets/offline.jpg";
 import BarraLateral from "../components/Painel";
+import hookGeral from "../hooks/HookGeral";
 
 const Municoes = () => {
-  const municao = hookMunicoes();
+  const municao = hookGeral("municao");
 
   return (
     <>

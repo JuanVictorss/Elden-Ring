@@ -1,12 +1,12 @@
 import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
-import hookClasses from "../hooks/ClassesHook";
 import BarraLateral from "../components/Painel";
+import hookGeral from "../hooks/HookGeral";
 
 const Classes = () => {
   console.log("Classes carregadas");
-  const classe = hookClasses();
+  const classe = hookGeral("classe");
   return (
     <>
       <BarraLateral />
