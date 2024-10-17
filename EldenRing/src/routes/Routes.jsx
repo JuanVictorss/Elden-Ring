@@ -5,6 +5,7 @@ import ArmadurasPage from "../pages/ArmadurasPage";
 import MunicoesPage from "../pages/MunicoesPage";
 import ClassesPage from "../pages/ClassesPage";
 import CinzasPage from "../pages/CinzasPage";
+import CriaturasPage from "../pages/CriaturasPage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   { path: "armaduras", element: <ArmadurasPage /> },
   { path: "cinzas", element: <CinzasPage /> },
   { path: "classes", element: <ClassesPage /> },
+  { path: "criaturas", element: <CriaturasPage /> },
 ]);
 
 export default router;
