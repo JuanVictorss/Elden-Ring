@@ -1,4 +1,4 @@
-import { BossCard } from "../styles/Cards/BossCard";
+import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
@@ -10,7 +10,7 @@ const Bosses = () => {
   return (
     <>
       <BarraLateral />
-      <BossCard>
+      <CardGeral>
         {boss ? (
           <ul>
             {boss.map((item) => (
@@ -46,7 +46,7 @@ const Bosses = () => {
         ) : (
           <p>Loading...</p>
         )}
-      </BossCard>
+      </CardGeral>
     </>
   );
 };

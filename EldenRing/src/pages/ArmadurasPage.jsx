@@ -1,4 +1,4 @@
-import { MunicaoCard } from "../styles/Cards/MunicaoCard";
+import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import hookGeral from "../hooks/HookGeral";
@@ -10,7 +10,7 @@ const Armaduras = () => {
   return (
     <>
       <BarraLateral />
-      <MunicaoCard>
+      <CardGeral>
         {armadura ? (
           <ul>
             {armadura.map((item) => (
@@ -54,7 +54,7 @@ const Armaduras = () => {
         ) : (
           <p>Loading...</p>
         )}
-      </MunicaoCard>
+      </CardGeral>
     </>
   );
 };

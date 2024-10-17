@@ -1,4 +1,4 @@
-import { MunicaoCard } from "../styles/Cards/MunicaoCard";
+import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import BarraLateral from "../components/Painel";
 import hookGeral from "../hooks/HookGeral";
@@ -9,7 +9,7 @@ const Municoes = () => {
   return (
     <>
       <BarraLateral />
-      <MunicaoCard>
+      <CardGeral>
         {municao ? (
           <ul>
             {municao.map((item) => (
@@ -39,7 +39,7 @@ const Municoes = () => {
         ) : (
           <p>Loading...</p>
         )}
-      </MunicaoCard>
+      </CardGeral>
     </>
   );
 };
