@@ -11,7 +11,7 @@ export const CardGeral = styled.div`
   .atributos {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: first baseline;
   }
 
   ul {

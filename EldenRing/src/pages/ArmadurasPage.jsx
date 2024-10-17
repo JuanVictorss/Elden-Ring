@@ -37,7 +37,6 @@ const Armaduras = () => {
                   {item.category}
                 </p>
                 <div className="dano-negacao">
-                  a div
                   {item.dmgNegation.map((damage, indice) => (
                     <p key={indice}>
                       {damage.name} : {damage.amount}
