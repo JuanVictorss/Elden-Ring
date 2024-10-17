@@ -1,19 +1,18 @@
-import hookBosses from "../hooks/BossesHook";
-import { BossCard } from "../styles/Cards/BossCard";
+import hookCinzas from "../hooks/CinzasHook";
+import { CardGeral } from "../styles/Cards//CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
 
-const Bosses = () => {
-  const boss = hookBosses();
-
+const CinzasPage = () => {
+  const cinza = hookCinzas();
   return (
     <>
       <BarraLateral />
-      <BossCard>
-        {boss ? (
+      <CardGeral>
+        {cinza ? (
           <ul>
-            {boss.map((item) => (
+            {cinza.map((item) => (
               <li key={item.id}>
                 <h2>{item.name}</h2>
                 <img
@@ -28,17 +27,19 @@ const Bosses = () => {
                 />
 
                 <p>
-                  <strong>Descrição: </strong> <br />
+                  <strong>Descrição</strong>
+                  <br />
                   {item.description}
                 </p>
                 <p>
-                  <strong>Localização: </strong>
+                  <strong>Afinidade: </strong>
                   <br />
-                  {item.location}
+                  {item.affinity}
                 </p>
                 <p>
-                  <strong>Drops: </strong> <br />
-                  {item.drops}
+                  <strong>Skill: </strong>
+                  <br />
+                  {item.skill}
                 </p>
               </li>
             ))}
@@ -46,9 +47,9 @@ const Bosses = () => {
         ) : (
           <p>Loading...</p>
         )}
-      </BossCard>
+      </CardGeral>
     </>
   );
 };
 
-export default Bosses;
+export default CinzasPage;

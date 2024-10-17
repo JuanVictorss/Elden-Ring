@@ -20,6 +20,11 @@ const BarraLateral = () => {
           </Link>
         </li>
         <li>
+          <Link to="/cinzas" className="linkCor">
+            Cinzas de Guerra
+          </Link>
+        </li>
+        <li>
           <Link to="/bosses" className="linkCor">
             Bosses
           </Link>

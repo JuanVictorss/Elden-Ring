@@ -1,6 +1,6 @@
 import React from "react";
 import EldenRing from "../assets/EldenRing.jpg";
-import BarraLateral from "./Painel";
+import BarraLateral from "../components/Painel";
 import { EstiloHome } from "../styles/Home";
 
 const Home = () => {

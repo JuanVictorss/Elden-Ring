@@ -1,19 +1,19 @@
-import hookBosses from "../hooks/BossesHook";
-import { BossCard } from "../styles/Cards/BossCard";
+import { MunicaoCard } from "../styles/Cards/MunicaoCard";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
+import hookArmaduras from "../hooks/ArmadurasHook";
 import BarraLateral from "../components/Painel";
 
 const Bosses = () => {
-  const boss = hookBosses();
+  const armadura = hookArmaduras();
 
   return (
     <>
       <BarraLateral />
-      <BossCard>
-        {boss ? (
+      <MunicaoCard>
+        {armadura ? (
           <ul>
-            {boss.map((item) => (
+            {armadura.map((item) => (
               <li key={item.id}>
                 <h2>{item.name}</h2>
                 <img
@@ -32,13 +32,21 @@ const Bosses = () => {
                   {item.description}
                 </p>
                 <p>
-                  <strong>Localização: </strong>
+                  <strong>Categoria: </strong>
                   <br />
-                  {item.location}
+                  {item.category}
                 </p>
+                <div className="dano-negacao">
+                  a div
+                  {item.dmgNegation.map((damage) => (
+                    <p>
+                      {damage.name} : {damage.amount}
+                    </p>
+                  ))}
+                </div>
                 <p>
-                  <strong>Drops: </strong> <br />
-                  {item.drops}
+                  <strong>Peso: </strong> <br />
+                  {item.weight}
                 </p>
               </li>
             ))}
@@ -46,7 +54,7 @@ const Bosses = () => {
         ) : (
           <p>Loading...</p>
         )}
-      </BossCard>
+      </MunicaoCard>
     </>
   );
 };

@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import BarraLateral from "../components/Painel";
+import Home from "../pages/HomePage";
 import Bosses from "../pages/BossesPage";
-import Home from "../components/Home";
-import { MunicoesPage } from "../pages/MunicoesPage";
+import ArmadurasPage from "../pages/ArmadurasPage";
+import MunicoesPage from "../pages/MunicoesPage";
+import ClassesPage from "../pages/ClassesPage";
+import CinzasPage from "../pages/CinzasPage";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,10 @@ const router = createBrowserRouter([
     element: <Bosses />,
   },
   { path: "municoes", element: <MunicoesPage /> },
-  //{ path: "armaduras", element: <Armaduras /> },
+
+  { path: "armaduras", element: <ArmadurasPage /> },
+  { path: "cinzas", element: <CinzasPage /> },
+  { path: "classes", element: <ClassesPage /> },
 ]);
 
 export default router;
