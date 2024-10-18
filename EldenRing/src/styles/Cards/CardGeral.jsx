@@ -22,7 +22,7 @@ export const CardGeral = styled.div`
     margin: 2rem;
     border-radius: 20px;
 
-    box-shadow: 10px 10px 50px #4a4a4a;
+    box-shadow: 10px 10px 50px #847f7f;
     background-color: #2a2a2a;
   }
   img {
@@ -32,11 +32,24 @@ export const CardGeral = styled.div`
     border-radius: 1rem;
   }
 
-  @media screen and (max-width: 1340px) {
+  @media screen and (max-width: 855px) {
+    li {
+      width: 80vw;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 20px;
+    }
+    img {
+      margin: 1rem;
+      width: 32vw;
+      height: 32vw;
+      border-radius: 1rem;
+    }
+  }
+  @media screen and (max-width: 1300px) {
     ul {
       display: grid;
       grid-template-columns: auto;
-      flex-direction: column;
       list-style-type: none;
     }
     li {
@@ -44,14 +57,6 @@ export const CardGeral = styled.div`
       padding: 2rem;
       margin: 2rem;
       border-radius: 20px;
-    }
-  }
-  @media screen and (max-width: 900px) {
-    ul {
-      display: grid;
-      grid-template-columns: auto;
-      flex-direction: column;
-      list-style-type: none;
     }
   }
 `;

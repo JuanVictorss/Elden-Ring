@@ -17,9 +17,7 @@ export const Painel = styled.div`
     margin: 1% 0;
     list-style-type: none;
   }
-
-  @media screen and (max-width: 650px) {
-    display: none;
+  @media screen and (max-width: 430px) {
   }
   @media screen and (max-width: 855px) {
     display: none;

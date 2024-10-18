@@ -1,12 +1,14 @@
 import React from "react";
 import hookGeral from "../hooks/HookGeral";
+import offline from "../assets/offline.jpg";
+import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import BarraLateral from "../components/Painel";
 
 const ItensPage = () => {
   const item = hookGeral("item");
   return (
-    <div className="geral">
+    <>
       <BarraLateral />
       <CardGeral>
         {item ? (
@@ -14,7 +16,16 @@ const ItensPage = () => {
             {item.map((dado) => (
               <li key={dado.id}>
                 <h2>{dado.name}</h2>
-                <img src={dado.image} alt="" />
+                <img
+                  src={
+                    navigator.onLine
+                      ? dado.image
+                        ? dado.image
+                        : noImage
+                      : offline
+                  }
+                  alt=""
+                />
                 <p>
                   <strong>Descrição:</strong>
                   <br />
@@ -37,7 +48,7 @@ const ItensPage = () => {
           <p>Loading...</p>
         )}
       </CardGeral>
-    </div>
+    </>
   );
 };
 

@@ -14,6 +14,14 @@ export const EstiloHome = styled.div`
     float: left;
     width: 99vw;
     height: 49vw;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 430px) {
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
   }
   @media only screen and (max-height: 600px) {
     img {
