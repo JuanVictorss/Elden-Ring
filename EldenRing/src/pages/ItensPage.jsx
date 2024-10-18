@@ -6,7 +6,7 @@ import BarraLateral from "../components/Painel";
 const ItensPage = () => {
   const item = hookGeral("item");
   return (
-    <>
+    <div className="geral">
       <BarraLateral />
       <CardGeral>
         {item ? (
@@ -37,7 +37,7 @@ const ItensPage = () => {
           <p>Loading...</p>
         )}
       </CardGeral>
-    </>
+    </div>
   );
 };
 

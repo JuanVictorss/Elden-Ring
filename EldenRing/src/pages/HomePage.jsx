@@ -6,9 +6,11 @@ import { EstiloHome } from "../styles/Home";
 const Home = () => {
   return (
     <EstiloHome>
-      <BarraLateral />
-      <div>
-        <img src={EldenRing} alt="" />
+      <div className="geral">
+        <BarraLateral />
+        <div>
+          <img src={EldenRing} alt="" />
+        </div>
       </div>
     </EstiloHome>
   );

@@ -4,29 +4,32 @@ export const Painel = styled.div`
   position: fixed;
   flex-direction: column;
   left: 0;
-  width: 12rem;
-  height: auto;
+  width: 160px;
+  height: 100%;
+  background-color: #2a2a2a;
 
   .linkCor {
     text-decoration: none;
     color: wheat;
   }
   li {
-    padding: 10%;
+    padding: 4%;
     margin: 1% 0;
-    background-color: #2a2a2a;
     list-style-type: none;
   }
 
-  .menu {
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
+  @media screen and (max-width: 855px) {
     display: none;
   }
 
-  @media only screen and (max-height: 600px) {
+  @media screen and (min-height: 900px) {
+    font-size: 90%;
     li {
-      padding: 4%;
+      padding: 10%;
       margin: 1% 0;
-      background-color: #2a2a2a;
       list-style-type: none;
     }
   }

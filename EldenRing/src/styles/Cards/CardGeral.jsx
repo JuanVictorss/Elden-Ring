@@ -3,24 +3,13 @@ import styled from "styled-components";
 export const CardGeral = styled.div`
   color: white;
 
-  .poder-de-ataque {
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-  }
-  .atributos {
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-  }
-
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-direction: column;
     list-style-type: none;
   }
+
   li {
     display: flex;
     align-items: center;
@@ -28,7 +17,7 @@ export const CardGeral = styled.div`
     flex-direction: column;
     text-align: center;
 
-    width: 40rem;
+    width: 35vw;
     padding: 2rem;
     margin: 2rem;
     border-radius: 20px;
@@ -38,8 +27,31 @@ export const CardGeral = styled.div`
   }
   img {
     margin: 1rem;
-    width: 25vw;
-    height: 25vw;
+    width: 23vw;
+    height: 23vw;
     border-radius: 1rem;
+  }
+
+  @media screen and (max-width: 1340px) {
+    ul {
+      display: grid;
+      grid-template-columns: auto;
+      flex-direction: column;
+      list-style-type: none;
+    }
+    li {
+      width: 60vw;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 20px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    ul {
+      display: grid;
+      grid-template-columns: auto;
+      flex-direction: column;
+      list-style-type: none;
+    }
   }
 `;

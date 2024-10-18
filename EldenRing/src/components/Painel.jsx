@@ -1,14 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Painel } from "../styles/Painel";
 
 const BarraLateral = () => {
   return (
     <Painel>
-      <div className="menu">
-        <a href="#">Menu</a>
-      </div>
       <ul>
+        {useLocation().pathname !== "/" && (
+          <li>
+            <Link to="/" className="linkCor">
+              Voltar
+            </Link>
+          </li>
+        )}
         <li>
           <Link to="/municoes" className="linkCor">
             Munições

@@ -1,9 +1,17 @@
 import styled from "styled-components";
 
 export const EstiloHome = styled.div`
-  max-width: 100vw;
-  max-height: 100vw;
+  max-width: 99vw;
+  max-height: 49vw;
+
+  .geral {
+    display: flex;
+    flex-direction: row;
+  }
+
   img {
+    display: flex;
+    float: left;
     width: 99vw;
     height: 49vw;
   }

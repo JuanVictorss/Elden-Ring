@@ -9,7 +9,6 @@ export const LocalizacoesPage = () => {
     <>
       <BarraLateral />
       <CardGeral>
-        (
         {localizacao ? (
           <ul>
             {localizacao.map((item) => (
@@ -27,7 +26,6 @@ export const LocalizacoesPage = () => {
         ) : (
           <p>Loading...</p>
         )}
-        )
       </CardGeral>
     </>
   );
