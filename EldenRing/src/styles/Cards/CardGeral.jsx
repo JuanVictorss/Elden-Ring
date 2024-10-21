@@ -16,8 +16,8 @@ export const CardGeral = styled.div`
     flex-direction: column;
     text-align: center;
 
-    box-shadow: 10px 10px 50px #847f7f;
-    background-color: #2a2a2a;
+    box-shadow: 10px 10px 50px #545252;
+    background-color: #06060681;
   }
 
   img {
