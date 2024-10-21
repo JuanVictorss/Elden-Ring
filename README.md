@@ -37,3 +37,7 @@ Site com páginas sobre equipamentos, criaturas, personagens e localizações do
 4. Execute o projeto:
    ```bash
     npm run dev
+
+## Melhorias pensadas
+- Adicionar filtro de busca
+- Adicionar paginação, para melhorar o desempenho ao carregar uma página
