@@ -9,7 +9,7 @@ Site com páginas sobre equipamentos, criaturas, personagens e localizações do
 
 - Consumo de uma API pública
 - Exibição de dados de forma dinâmica
-- Interface responsiva e amigável
+- Interface responsiva, funcionando em dispositivos móveis
 - Gerenciamento de estado com React hooks (useState, useEffect)
 
 ## API utilizada
