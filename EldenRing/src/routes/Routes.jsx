@@ -17,7 +17,7 @@ import { TalismasPage } from "../pages/TalismasPage";
 import { ArmasPage } from "../pages/ArmasPage";
 
 const router = createBrowserRouter([
-  { path: "/Elden-Ring", element: <HomePage /> },
+  { path: "/Elden-Ring/", element: <HomePage /> },
   { path: "Elden-Ring/armas", element: <ArmasPage /> },
   { path: "Elden-Ring/armaduras", element: <ArmadurasPage /> },
   { path: "Elden-Ring/bosses", element: <BossesPage /> },

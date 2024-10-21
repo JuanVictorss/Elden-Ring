@@ -5,9 +5,10 @@ const ListaLinks = () => {
   return (
     <>
       <ul>
-        {useLocation().pathname !== "/Elden-Ring" && (
+        {useLocation().pathname !==
+          ("/Elden-Ring/" || "https://juanvictorss.github.io/Elden-Ring/") && (
           <li>
-            <Link to="/Elden-Ring" className="linkCor">
+            <Link to="/Elden-Ring/" className="linkCor">
               Voltar
             </Link>
           </li>
