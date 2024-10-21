@@ -1,5 +1,5 @@
 import axios from "axios";
-const online = "http://eldenring.fanapis.com/api";
+const online = "https://eldenring.fanapis.com/api";
 const local = "http://localhost:3000/api";
 const ApiURL = navigator.onLine ? online : local;
 
