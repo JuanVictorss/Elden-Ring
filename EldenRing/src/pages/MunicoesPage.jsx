@@ -2,12 +2,14 @@ import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import BarraLateral from "../components/Painel";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 const Municoes = () => {
   const municao = hookGeral("municao");
 
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {municao ? (

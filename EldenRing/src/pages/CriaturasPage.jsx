@@ -2,14 +2,15 @@ import { CardGeral } from "../styles/Cards/CardGeral";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
-
 import React from "react";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 const CriaturasPage = () => {
   const criatura = hookGeral("criatura");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {criatura ? (

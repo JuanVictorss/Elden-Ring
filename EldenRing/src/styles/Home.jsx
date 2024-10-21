@@ -16,7 +16,7 @@ export const EstiloHome = styled.div`
     height: 49vw;
     object-fit: cover;
   }
-  @media only screen and (max-width: 430px) {
+  @media only screen and (min-width: 30px) {
     img {
       width: 100vw;
       height: 100vh;

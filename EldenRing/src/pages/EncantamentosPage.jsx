@@ -4,12 +4,14 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 const EncantamentosPage = () => {
   const encantamento = hookGeral("encantamento");
 
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {encantamento ? (

@@ -4,11 +4,13 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 export const TalismasPage = () => {
   const talisma = hookGeral("talisma");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {talisma ? (

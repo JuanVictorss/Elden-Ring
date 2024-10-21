@@ -3,12 +3,14 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import BarraLateral from "../components/Painel";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 const Classes = () => {
   console.log("Classes carregadas");
   const classe = hookGeral("classe");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {classe ? (

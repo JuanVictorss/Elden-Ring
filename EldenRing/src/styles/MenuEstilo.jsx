@@ -1,36 +1,45 @@
 import styled from "styled-components";
 
-export const Painel = styled.div`
+export const MenuEstilo = styled.div`
   position: fixed;
-  flex-direction: column;
-  left: 0;
-  width: 160px;
-  height: 100%;
-  background-color: #2a2a2a;
 
+  left: 0;
   .linkCor {
     text-decoration: none;
     color: wheat;
   }
+  ul {
+    background-color: #2a2a2a;
+    border: none;
+    list-style-type: none;
+  }
   li {
+    list-style-type: none;
     padding: 4%;
     margin: 1% 0;
-    list-style-type: none;
+  }
+
+  button {
+    border-radius: 20px;
+    color: black;
+    height: 10vw;
+    width: 12rem;
+    border: none;
   }
 
   @media screen and (min-width: 230px) {
-    display: none;
+    display: block;
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: none;
   }
   @media screen and (min-width: 1025px) {
-    display: block;
+    display: none;
   }
 
   @media screen and (min-width: 1920px) {
-    display: block;
+    display: none;
   }
 
   @media screen and (min-height: 900px) {

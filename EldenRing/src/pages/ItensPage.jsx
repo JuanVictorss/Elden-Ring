@@ -4,11 +4,13 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import BarraLateral from "../components/Painel";
+import { Menu } from "../components/Menu";
 
 const ItensPage = () => {
   const item = hookGeral("item");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {item ? (

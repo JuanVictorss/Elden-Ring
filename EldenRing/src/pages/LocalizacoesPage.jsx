@@ -4,11 +4,13 @@ import BarraLateral from "../components/Painel";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 export const LocalizacoesPage = () => {
   const localizacao = hookGeral("localizacao");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {localizacao ? (

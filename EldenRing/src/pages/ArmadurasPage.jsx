@@ -3,12 +3,14 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import hookGeral from "../hooks/HookGeral";
 import BarraLateral from "../components/Painel";
+import { Menu } from "../components/Menu";
 
 const Armaduras = () => {
   const armadura = hookGeral("armadura");
 
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {armadura ? (

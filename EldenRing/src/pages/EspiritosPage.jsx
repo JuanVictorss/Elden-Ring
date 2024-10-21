@@ -4,11 +4,13 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import hookGeral from "../hooks/HookGeral";
+import { Menu } from "../components/Menu";
 
 export const EspiritosPage = () => {
   const espirito = hookGeral("espirito");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {espirito ? (

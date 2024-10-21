@@ -4,13 +4,14 @@ import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
 import BarraLateral from "../components/Painel";
+import { Menu } from "../components/Menu";
+
 export const NpcsPage = () => {
   const npc = hookGeral("npc");
   return (
     <>
-      <div className="painel-container">
-        <BarraLateral />
-      </div>
+      <Menu />
+      <BarraLateral />
       <CardGeral>
         {npc ? (
           <ul>

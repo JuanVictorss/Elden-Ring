@@ -4,11 +4,13 @@ import BarraLateral from "../components/Painel";
 import offline from "../assets/offline.jpg";
 import noImage from "../assets/noImage.jpg";
 import { CardGeral } from "../styles/Cards/CardGeral";
+import { Menu } from "../components/Menu";
 
 export const EscudosPage = () => {
   const escudo = hookGeral("escudo");
   return (
     <>
+      <Menu />
       <BarraLateral />
       <CardGeral>
         {escudo ? (
