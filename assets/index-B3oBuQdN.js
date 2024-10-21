@@ -177,11 +177,12 @@ body{
   }
 
   button {
-    background-color: #2a2a2a;
-    color: #ffffff;
+    border-radius: 0px 0px 50px 50px;
     height: 10vw;
-    width: 12rem;
+    width: 11rem;
     border: none;
+    color: #ffffff;
+    background-color: #2a2a2a;
   }
 
   @media screen and (min-width: 230px) {
