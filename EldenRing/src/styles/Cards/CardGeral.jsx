@@ -30,7 +30,7 @@ export const CardGeral = styled.div`
   }
   @media screen and (min-width: 144px) {
     li {
-      width: 70vw;
+      width: 90vw;
       padding: 2rem;
       margin: 2rem;
       border-radius: 20px;

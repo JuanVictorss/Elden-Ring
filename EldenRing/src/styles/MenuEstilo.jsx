@@ -20,8 +20,8 @@ export const MenuEstilo = styled.div`
   }
 
   button {
-    border-radius: 20px;
-    color: black;
+    background-color: #2a2a2a;
+    color: #ffffff;
     height: 10vw;
     width: 12rem;
     border: none;
