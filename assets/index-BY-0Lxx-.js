@@ -177,8 +177,8 @@ body{
   }
 
   button {
-    border-radius: 20px;
-    color: black;
+    background-color: #2a2a2a;
+    color: #ffffff;
     height: 10vw;
     width: 12rem;
     border: none;
@@ -212,7 +212,7 @@ body{
   flex-direction: column;
   left: 0;
   width: 160px;
-  height: 100%;
+  height: 99%;
   background-color: #2a2a2a;
 
   .linkCor {
@@ -263,7 +263,7 @@ body{
   }
   @media screen and (min-width: 144px) {
     li {
-      width: 70vw;
+      width: 90vw;
       padding: 2rem;
       margin: 2rem;
       border-radius: 20px;
