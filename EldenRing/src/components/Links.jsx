@@ -5,86 +5,86 @@ const ListaLinks = () => {
   return (
     <>
       <ul>
-        {useLocation().pathname !== "/" && (
+        {useLocation().pathname !== "/Elden-Ring" && (
           <li>
-            <Link to="/" className="linkCor">
+            <Link to="/Elden-Ring" className="linkCor">
               Voltar
             </Link>
           </li>
         )}
         <li>
-          <Link to="/municoes" className="linkCor">
-            Munições
+          <Link to="/Elden-Ring/armas" className="linkCor">
+            Armas
           </Link>
         </li>
         <li>
-          <Link to="/armaduras" className="linkCor">
+          <Link to="/Elden-Ring/armaduras" className="linkCor">
             Armaduras
           </Link>
         </li>
         <li>
-          <Link to="/cinzas" className="linkCor">
-            Cinzas de Guerra
-          </Link>
-        </li>
-        <li>
-          <Link to="/bosses" className="linkCor">
+          <Link to="/Elden-Ring/bosses" className="linkCor">
             Bosses
           </Link>
         </li>
         <li>
-          <Link to="/classes" className="linkCor">
+          <Link to="/Elden-Ring/classes" className="linkCor">
             Classes
           </Link>
         </li>
         <li>
-          <Link to="/criaturas" className="linkCor">
+          <Link to="/Elden-Ring/cinzas" className="linkCor">
+            Cinzas de Guerra
+          </Link>
+        </li>
+        <li>
+          <Link to="/Elden-Ring/criaturas" className="linkCor">
             Criaturas
           </Link>
         </li>
         <li>
-          <Link to="/encantamentos" className="linkCor">
+          <Link to="/Elden-Ring/encantamentos" className="linkCor">
             Encantamentos
           </Link>
         </li>
         <li>
-          <Link to="/itens" className="linkCor">
-            Itens
-          </Link>
-        </li>
-        <li>
-          <Link to="/localizacoes" className="linkCor">
-            Localizações
-          </Link>
-        </li>
-        <li>
-          <Link to="/npcs" className="linkCor">
-            NPCs
-          </Link>
-        </li>
-        <li>
-          <Link to="/escudos" className="linkCor">
+          <Link to="/Elden-Ring/escudos" className="linkCor">
             Escudos
           </Link>
         </li>
         <li>
-          <Link to="/feiticos" className="linkCor">
-            Feitiços
-          </Link>
-        </li>
-        <li>
-          <Link to="/espiritos" className="linkCor">
+          <Link to="/Elden-Ring/espiritos" className="linkCor">
             Espíritos
           </Link>
         </li>
         <li>
-          <Link to="/talismas" className="linkCor">
-            Talismãs
+          <Link to="/Elden-Ring/feiticos" className="linkCor">
+            Feitiços
           </Link>
         </li>
         <li>
-          <Link to="/armas" className="linkCor">
-            Armas
+          <Link to="/Elden-Ring/itens" className="linkCor">
+            Itens
+          </Link>
+        </li>
+        <li>
+          <Link to="/Elden-Ring/localizacoes" className="linkCor">
+            Localizações
+          </Link>
+        </li>
+        <li>
+          <Link to="/Elden-Ring/municoes" className="linkCor">
+            Munições
+          </Link>
+        </li>
+        <li>
+          <Link to="/Elden-Ring/npcs" className="linkCor">
+            NPCs
+          </Link>
+        </li>
+        <li>
+          <Link to="/Elden-Ring/talismas" className="linkCor">
+            Talismãs
           </Link>
         </li>
       </ul>

@@ -17,22 +17,22 @@ import { TalismasPage } from "../pages/TalismasPage";
 import { ArmasPage } from "../pages/ArmasPage";
 
 const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "bosses", element: <BossesPage /> },
-  { path: "municoes", element: <MunicoesPage /> },
-  { path: "armaduras", element: <ArmadurasPage /> },
-  { path: "cinzas", element: <CinzasPage /> },
-  { path: "classes", element: <ClassesPage /> },
-  { path: "criaturas", element: <CriaturasPage /> },
-  { path: "encantamentos", element: <EncantamentosPage /> },
-  { path: "itens", element: <ItensPage /> },
-  { path: "localizacoes", element: <LocalizacoesPage /> },
-  { path: "npcs", element: <NpcsPage /> },
-  { path: "escudos", element: <EscudosPage /> },
-  { path: "feiticos", element: <FeiticosPage /> },
-  { path: "espiritos", element: <EspiritosPage /> },
-  { path: "talismas", element: <TalismasPage /> },
-  { path: "armas", element: <ArmasPage /> },
+  { path: "/Elden-Ring", element: <HomePage /> },
+  { path: "Elden-Ring/armas", element: <ArmasPage /> },
+  { path: "Elden-Ring/armaduras", element: <ArmadurasPage /> },
+  { path: "Elden-Ring/bosses", element: <BossesPage /> },
+  { path: "Elden-Ring/classes", element: <ClassesPage /> },
+  { path: "Elden-Ring/cinzas", element: <CinzasPage /> },
+  { path: "Elden-Ring/criaturas", element: <CriaturasPage /> },
+  { path: "Elden-Ring/encantamentos", element: <EncantamentosPage /> },
+  { path: "Elden-Ring/escudos", element: <EscudosPage /> },
+  { path: "Elden-Ring/espiritos", element: <EspiritosPage /> },
+  { path: "Elden-Ring/feiticos", element: <FeiticosPage /> },
+  { path: "Elden-Ring/itens", element: <ItensPage /> },
+  { path: "Elden-Ring/localizacoes", element: <LocalizacoesPage /> },
+  { path: "Elden-Ring/municoes", element: <MunicoesPage /> },
+  { path: "Elden-Ring/npcs", element: <NpcsPage /> },
+  { path: "Elden-Ring/talismas", element: <TalismasPage /> },
 ]);
 
 export default router;
